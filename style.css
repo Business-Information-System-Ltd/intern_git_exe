@@ -13,7 +13,6 @@ body {
   flex-direction:column;
   margin:0;
 }
-
 /* Navbar */
 .navbar {
   background: #1ac553;
@@ -58,6 +57,118 @@ body {
   color: #fff;
   font-size: 1.6rem;
   cursor: pointer;
+}
+
+
+.card {
+  background: #fff;
+  max-width: 500px; 
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-subtitle {
+  color: #1ac553;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.card-desc {
+  color: #555;
+  font-size: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+}
+
+/* Contact Grid (3 Sub-cards layout) */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.sub-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 4px solid #1ac553;
+  transition: box-shadow 0.2s;
+}
+
+.sub-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sub-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.sub-card-header h3 {
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+.sub-card p {
+  color: #555;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.card-link {
+  color: #1ac553;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* About Box section */
+.about-box {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #1ac553;
+  padding: 0.9rem;
+  border-radius: 4px;
+}
+
+.about-box p {
+  color: #555;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.about-box p:last-child {
+  margin-bottom: 0;
 }
 
 /* Main card */
