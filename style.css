@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: #fafafa;
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #1ac553;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 2.5rem;
+  position: relative;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-color: #2ecc71;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Main card */
+main {
+  flex: 1;
+  padding: 1.5rem 1rem;
+}
+
+.card {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.6rem 4rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card img {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  margin: 4rem auto 0;
+  border-radius: 14px;
+  transition: transform 0.3s;
+}
+
+.card img.wave {
+  transform: rotate(-6deg) scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background: #1ac553;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.social {
+  margin-bottom: 0.7rem;
+}
+
+.social a {
+  color: #c4132a;
+  text-decoration: none;
+  margin: 0 1.2rem;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .navbar {
+    padding: 1rem 1.2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #34495e;
+    padding: 0.5rem 1.2rem 1rem;
+    z-index: 10;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .card h1 {
+    font-size: 1.6rem;
+  }
+
+  .card img {
+    margin-top: 2.5rem;
+  }
+}
