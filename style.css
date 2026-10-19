@@ -176,7 +176,26 @@ main {
   flex: 1;
   padding: 1.5rem 1rem;
 }
+/* Learning Cards */
+.blog-card {
+    background-color: #f7f7f7;
+    border-left: 5px solid #3c9b69;
+    border-radius: 6px;
 
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.blog-card h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.blog-card p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
 .card {
   background: #fff;
   max-width: 800px;
