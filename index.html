@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +9,17 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <header class="navbar">
-    <a href="#home" class="logo">My Portfolio</a>
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <a href="index.html" class="logo">My Portfolio</a>
+
+    <button class="menu-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false">&#9776;</button>
+
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="blog.html">Learning Notes</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -22,29 +28,51 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
     <section class="card" id="home">
       <h1>Hi, I'm a Junior Developer.</h1>
-      <p>I am learning how to build clean, responsive websites using HTML and CSS.</p>
-<<<<<<< HEAD
-      <img id="hero-img" src="photo/image.png" alt="A kid  saying hello">
-=======
-      <img id="hero-img" src="image.png" alt="A kid  saying hello">
->>>>>>> 0041c814bf6f127c74597b33e966ce3b76c5aa45
+
+      <p>
+        I am learning how to build clean, responsive websites
+        using HTML and CSS.
+      </p>
+
+      <img
+        id="hero-img"
+        src="photo/image.png"
+        alt="A kid saying hello"
+      >
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="social">
-      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/"
+         target="_blank"
+         rel="noopener noreferrer">GitHub</a>
+
       <span>|</span>
-      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+
+      <a href="https://www.linkedin.com/"
+         target="_blank"
+         rel="noopener noreferrer">LinkedIn</a>
+
       <span>|</span>
-      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+
+      <a href="https://twitter.com/"
+         target="_blank"
+         rel="noopener noreferrer">Twitter</a>
     </div>
-    <p>&copy; <span id="year">2026</span> Junior Developer Portfolio. All rights reserved.</p>
+
+    <p>
+      &copy; <span id="year">2026</span>
+      Junior Developer Portfolio. All rights reserved.
+    </p>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
